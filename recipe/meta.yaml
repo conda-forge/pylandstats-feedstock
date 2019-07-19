@@ -11,9 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record=record.txt"
-  skip: true  # [win or py2k]
+  skip: true  # [win and py2k]
 
 requirements:
   build:
@@ -21,12 +21,13 @@ requirements:
   host:
     - python
     - pip
+    - numpy >=1.13
     - setuptools >=40.8.0
     - wheel
     - pythran
   run:
     - python
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - pandas
     - geopandas
     - matplotlib
