@@ -34,6 +34,9 @@ requirements:
     - matplotlib
     - rasterio
     - scipy
+    - transonic >=0.4.0
+    - pythran  # [not win]
+    - numba  # [win]    
     
 test:
   imports:
