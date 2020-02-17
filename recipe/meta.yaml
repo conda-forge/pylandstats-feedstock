@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record=record.txt"
   skip: true  # [py2k]
 
@@ -31,7 +31,7 @@ requirements:
     - numpy
     - pandas
     - geopandas
-    - matplotlib
+    - matplotlib-base
     - rasterio
     - scipy
     - transonic >=0.4.0
