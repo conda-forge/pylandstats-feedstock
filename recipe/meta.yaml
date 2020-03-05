@@ -1,6 +1,6 @@
 {% set name = "pylandstats" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "1568a0e6ca78c7e840bbe481604fe96a3ce2c2f3242f25e78735e9b1850b9d87" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "3fd48e36c5838cf56f77b30dfb551f2b178bba244f21efb92958294e23ace9b0" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record=record.txt"
+  script: {{ PYTHON }} setup.py install --single-version-externally-managed --record=record.txt
   skip: true  # [py2k]
 
 requirements:
@@ -37,7 +37,6 @@ requirements:
     - transonic >=0.4.0
     - pythran  # [not win]
     - numba  # [win]    
-    
 test:
   imports:
     - pylandstats
@@ -47,7 +46,7 @@ about:
   license: GNU General Public v3 (GPLv3)
   license_family: GPL3
   license_file: LICENSE
-  summary: 'Open-source Pythonic library to compute landscape metrics within the PyData stack (NumPy, pandas, matplotlib...)'
+  summary: Open-source Pythonic library to compute landscape metrics within the PyData stack (NumPy, pandas, matplotlib...)
   description: |
     Open-source Pythonic library to compute landscape metrics within the PyData
     stack (NumPy, pandas, matplotlib...)
