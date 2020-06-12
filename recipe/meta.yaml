@@ -1,6 +1,6 @@
 {% set name = "pylandstats" %}
-{% set version = "2.1.0" %}
-{% set sha256 = "ed8fd58044e301c167fc903d3e6b6b1b5d682ec618e7f334d4f3a5c708a6b09c" %}
+{% set version = "2.1.1" %}
+{% set sha256 = "1379d4b8b3356a092bd3091026d4361d29a3a9657ff86587f95f0309cdd18863" %}
 
 package:
   name: {{ name }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} setup.py install --single-version-externally-managed --record=record.txt
   skip: true  # [py2k]
 
