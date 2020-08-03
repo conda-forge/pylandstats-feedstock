@@ -1,6 +1,6 @@
 {% set name = "pylandstats" %}
-{% set version = "2.1.1" %}
-{% set sha256 = "1379d4b8b3356a092bd3091026d4361d29a3a9657ff86587f95f0309cdd18863" %}
+{% set version = "2.1.2" %}
+{% set sha256 = "aeaf8be7964672cdf2102adb0b382bc3f9a57c3e9cb06956ec980fefc5676629" %}
 
 package:
   name: {{ name }}
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://github.com/martibosch/pylandstats
-  license: GNU General Public v3 (GPLv3)
+  license: GPL-3.0-or-later
   license_family: GPL3
   license_file: LICENSE
   summary: Open-source Pythonic library to compute landscape metrics within the PyData stack (NumPy, pandas, matplotlib...)
