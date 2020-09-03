@@ -3,7 +3,7 @@ About pylandstats
 
 Home: https://github.com/martibosch/pylandstats
 
-Package license: GNU General Public v3 (GPLv3)
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD-3-Clause
 
