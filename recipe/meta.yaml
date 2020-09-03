@@ -26,6 +26,7 @@ requirements:
     - transonic >=0.4.0
     - pythran  # [not win]
     - numba  # [win]
+    - gast ==0.3.3  # [not win]
   run:
     - python
     - numpy
@@ -36,7 +37,8 @@ requirements:
     - scipy
     - transonic >=0.4.0
     - pythran  # [not win]
-    - numba  # [win]    
+    - numba  # [win]
+    - gast ==0.3.3   # [not win]
 test:
   imports:
     - pylandstats
