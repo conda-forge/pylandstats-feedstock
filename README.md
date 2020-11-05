@@ -5,9 +5,13 @@ Home: https://github.com/martibosch/pylandstats
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylandstats-feedstock/blob/master/LICENSE.txt)
 
 Summary: Open-source Pythonic library to compute landscape metrics within the PyData stack (NumPy, pandas, matplotlib...)
+
+Development: https://github.com/martibosch/pylandstats
+
+Documentation: https://pylandstats.readthedocs.io/
 
 Open-source Pythonic library to compute landscape metrics within the PyData
 stack (NumPy, pandas, matplotlib...)
