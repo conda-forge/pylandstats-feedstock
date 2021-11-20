@@ -1,6 +1,6 @@
 {% set name = "pylandstats" %}
-{% set version = "2.4.1" %}
-{% set sha256 = "d8b4b99d9284c121f10e66390b2879a10fe2e2afbf21739235e28995ec25a6fc" %}
+{% set version = "2.4.2" %}
+{% set sha256 = "1006ce09dea889f5a9fe9b3fae8073b2c836bdefd27eeae2d7bb400fcad153cb" %}
 
 package:
   name: {{ name }}
