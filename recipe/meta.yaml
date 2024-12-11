@@ -23,7 +23,7 @@ requirements:
     - setuptools >=74.1.0
     - wheel
     - cython
-    - numpy
+    - numpy >=2.0.0
     - pip
   run:
     - python >=3.9
