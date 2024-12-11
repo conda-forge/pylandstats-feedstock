@@ -26,7 +26,7 @@ requirements:
     - numpy >=2.0.0
     - pip
   run:
-    - python >=3.9
+    - python
     - dask-core
     - geopandas
     - matplotlib-base >=2.2
@@ -54,8 +54,6 @@ about:
     ecosystem (NumPy, pandas, matplotlib...)
   doc_url: https://pylandstats.readthedocs.io
   dev_url: https://github.com/martibosch/pylandstats
-  license: GPL-3.0-3.0.
-  license_file: LICENSE
 
 extra:
   recipe-maintainers:
