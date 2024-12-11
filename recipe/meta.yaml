@@ -17,8 +17,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
   host:
-    - python >=3.9
+    - python
     - setuptools >=74.1.0
     - wheel
     - cython
