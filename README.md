@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylandstats-fee
 
 Home: https://github.com/martibosch/pylandstats
 
-Package license: GPL-3.0-3.0.
+Package license: GPL-3.0-or-later
 
 Summary: Computing landscape metrics in the Python ecosystem.
 
