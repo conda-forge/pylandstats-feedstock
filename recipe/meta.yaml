@@ -1,5 +1,5 @@
 {% set name = "pylandstats" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylandstats-{{ version }}.tar.gz
-  sha256: cc7074949c4e0b52c90655443e4f9fd013aa679673661fe31475963bb7ab9b8b
+  sha256: 488ba70a550866b10af6b06805177d5a1f6c164c161cd33c3892f30e6a96270b
 
 build:
   skip: true  # [py<39]
