@@ -27,12 +27,15 @@ requirements:
     - pip
   run:
     - python
+    - clustergram
     - dask-core
     - geopandas
     - matplotlib-base >=2.2
     - pandas >=0.23
     - rasterio >=1.0.0
+    - scikit-learn >=1.0.0
     - scipy >=1.0.0
+    - seaborn
 
 test:
   imports:
