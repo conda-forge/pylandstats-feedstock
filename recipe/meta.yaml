@@ -1,5 +1,5 @@
 {% set name = "pylandstats" %}
-{% set version = "3.0.3" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylandstats-{{ version }}.tar.gz
-  sha256: 488ba70a550866b10af6b06805177d5a1f6c164c161cd33c3892f30e6a96270b
+  sha256: 6903514eac254ddd41482b575501389e92c81b8d79d2ed1585c0d8a0dfe0b382
 
 build:
   skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -27,12 +27,15 @@ requirements:
     - pip
   run:
     - python
+    - clustergram
     - dask-core
     - geopandas
     - matplotlib-base >=2.2
     - pandas >=0.23
     - rasterio >=1.0.0
+    - scikit-learn >=1.0.0
     - scipy >=1.0.0
+    - seaborn
 
 test:
   imports:
@@ -48,7 +51,7 @@ about:
   license_family: GPL3
   license_file: LICENSE
   summary: Computing landscape metrics in the Python ecosystem.
-  description: |    
+  description: |
     Open-source Pythonic library to compute landscape metrics in the Python
     ecosystem (NumPy, pandas, matplotlib...)
   doc_url: https://pylandstats.readthedocs.io
